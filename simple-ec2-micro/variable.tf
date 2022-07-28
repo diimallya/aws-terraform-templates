@@ -44,3 +44,13 @@ variable "aws_ami_owner_id" {
   description = "AWS AMI Owner ID"
   default     = "099720109477"
 }
+
+variable "env"{
+  description = "Environment tag value"
+  default = "dev"
+}
+
+variable "vm_name"{
+  description = "VM Name"
+  default = "ec2-demo"
+}
