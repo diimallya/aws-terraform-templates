@@ -8,7 +8,7 @@ variable "secret_key"{
 
 variable "aws_region" {
   description = "AWS region to launch servers."
-  default     = "us-east-1"
+  default     = "us-east-2"
 }
 
 variable "vpc_name_tag" {
@@ -37,12 +37,12 @@ variable "public_ssh_key" {
 variable "aws_image" {
   type        = string
   description = "Operating system image id / template that should be used when creating the virtual image"
-  default     = "ubuntu/images/hvm-ssd/ubuntu-trusty-14.04-amd64-server-*"
+  default     = "amzn2-ami-kernel-5.10-hvm-2.0.20220805.0-x86_64-gp2"
 }
 
 variable "aws_ami_owner_id" {
   description = "AWS AMI Owner ID"
-  default     = "099720109477"
+  default     = "137112412989"
 }
 
 variable "env"{
