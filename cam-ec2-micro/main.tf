@@ -35,12 +35,12 @@ resource "aws_key_pair" "orpheus_public_key" {
   public_key = "${var.public_ssh_key}"
 }
 
-
+/*
 resource "aws_key_pair" "orpheus_public_key-2" {
   key_name   = "${var.public_ssh_key_name}-2"
   public_key = "${var.public_ssh_key}"
 }
-  
+*/ 
 resource "aws_instance" "orpheus_ubuntu_micro" {
   instance_type = "${var.aws_image_size}"
   ami           = "${data.aws_ami.aws_ami.id}"
